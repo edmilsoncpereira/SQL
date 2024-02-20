@@ -1,4 +1,5 @@
 -- Irá calcular a função da coluna de acordo com a linha anterior, a sua linha e linha posterior em relação à ela.
+--teste
 
 WITH data (t, a) AS (
   VALUES(1, 1),
