@@ -1,0 +1,15 @@
+-- Irá calcular a função da coluna de acordo com a linha anterior, a sua linha e linha posterior em relação à ela.
+
+WITH data (t, a) AS (
+  VALUES(1, 1),
+        (2, 5),
+        (3, 3),
+        (4, 5),
+        (5, 4),
+        (6, 11)
+)
+SELECT t, a, sum(a) OVER (ORDER BY t ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING)
+FROM data
+ORDER BY t
+
+-- MENÇÃO HONROSA PARA O UNBOUNDED PRECEDING QUE SIGNIFICA QUE FARÁ COMO SE FOSSE UMA SOMA ACUMULADA A PARTIR DA PRIMEIRA LINHA
