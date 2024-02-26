@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 with base as (
 select*
 from base_1
@@ -5,3 +6,11 @@ where coluna_a = 'algo'
 )
 select*
 from base
+=======
+with final as (select*
+from base
+)
+select*
+from final
+where coluna_a = 'teste_push'
+>>>>>>> a7849d8f67f83d4b5e0d92f31a4295643ddf0819
