@@ -1,2 +1,7 @@
+with base as (
+select*
+from base_1
+where coluna_a = 'algo'
+)
 select*
 from base
