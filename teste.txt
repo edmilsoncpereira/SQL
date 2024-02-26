@@ -3,3 +3,4 @@ from base
 )
 select*
 from final
+where coluna_a = 'teste_push'
